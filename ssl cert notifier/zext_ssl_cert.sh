@@ -53,7 +53,7 @@ then
 #    echo $end_date
     now_seconds=`date '+%s'`
 #    echo $now_seconds
-    echo "($end_date_seconds-$now_seconds)/24/3600" | bc
+    echo $((($end_date_seconds-$now_seconds)/24/3600))
 fi
 ;;
 
